@@ -47,11 +47,15 @@ const LoggedInNav = () => [
       aria-labelledby="navbarDropdownMenuLink"
     >
       <NavLink to="/profile">
-        <button className="dropdown-item">Profile</button>
+        <button type="button" className="dropdown-item">
+          Profile
+        </button>
       </NavLink>
       <div className="dropdown-divider" />
       <NavLink to="/login" onClick={() => Meteor.logout()}>
-        <button className="dropdown-item">Logout</button>
+        <button type="button" className="dropdown-item">
+          Logout
+        </button>
       </NavLink>
     </div>
   </li>,
