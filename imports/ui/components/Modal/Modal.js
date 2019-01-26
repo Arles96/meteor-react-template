@@ -1,8 +1,3 @@
-/**
- * A basic bootstrap 4 modal
- * jw
- */
-
 import { Meteor } from 'meteor/meteor';
 import React from 'react';
 import PropTypes from 'prop-types';

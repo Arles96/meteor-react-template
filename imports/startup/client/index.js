@@ -3,7 +3,6 @@ import React from 'react';
 import { render } from 'react-dom';
 
 import 'popper.js';
-import 'bootstrap';
 import './styles/main.scss';
 
 // connect to ddp (uncomment when url is set in ddp.js)
