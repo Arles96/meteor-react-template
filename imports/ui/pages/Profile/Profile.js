@@ -24,21 +24,22 @@ class Profile extends React.Component {
   render() {
     return (
       <div className="profile-page">
-
+        <h1>Hola Usuario</h1>
       </div>
     );
   }
 }
 
-Profile.defaultProps = {
-  counter: null,
-};
-
 Profile.propTypes = {
-
+  loggedIn: PropTypes.bool.isRequired,
+  history: PropTypes.shape({
+    push: PropTypes.func.isRequired,
+  }).isRequired,
 };
-
+/*
 export default withTracker(() => {
   // counters example
   return undefined;
-})(Profile);
+})(Profile); */
+
+export default Profile;
