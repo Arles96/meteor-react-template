@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Navbar from '../../components/Navbar/Navbar';
 
 import './Landing.scss';
 
@@ -24,6 +25,7 @@ class Landing extends React.Component {
     }
     return (
       <div className="landing-page">
+        <Navbar/>
         <h1>Landing Page</h1>
       </div>
     );

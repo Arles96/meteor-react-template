@@ -1,5 +1,3 @@
-/* eslint-disable import/no-named-default, react/destructuring-assignment */
-
 // import packages
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
@@ -7,28 +5,24 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { BrowserRouter as Router, Switch } from 'react-router-dom';
 
-// import navbar
-import Navbar from '../components/Navbar';
-
 // import routes
-import Landing from '../pages/Landing';
-import Login from '../pages/Login';
-import Signup from '../pages/Signup';
-import Profile from '../pages/Profile';
-import NotFound from '../pages/Not-Found';
-import RecoverPassword from '../pages/RecoverPassword';
-import ResetPassword from '../pages/ResetPassword';
+import Landing from '../../ui/pages/Landing';
+import Login from '../../ui/pages/Login';
+import Signup from '../../ui/pages/Signup';
+import Profile from '../../ui/pages/Profile';
+import NotFound from '../../ui/pages/Not-Found';
+import RecoverPassword from '../../ui/pages/RecoverPassword';
+import ResetPassword from '../../ui/pages/ResetPassword';
 
 // import Spinner
-import Spinner from '../components/Spinner';
+import Spinner from '../../ui/components/Spinner';
 
 // import hoc to pass additional props to routes
-import PropsRoute from '../pages/PropsRoute';
+import PropsRoute from '../../ui/pages/PropsRoute';
 
 const App = props => (
   <Router>
     <div>
-      <PropsRoute component={Navbar} {...props} />
       {props.loggingIn && <Spinner />}
       <Switch>
         <PropsRoute exact path="/" component={Landing} {...props} />

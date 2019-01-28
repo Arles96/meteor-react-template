@@ -1,13 +1,13 @@
 import React from 'react';
-
+import { Segment, Dimmer, Loader } from 'semantic-ui-react';
 import './Spinner.scss';
 
 const Spinner = () => (
-  <div className="login-spinner">
-    <div>
-      <i className="fa fa-circle-o-notch fa-spin" />
-    </div>
-  </div>
+  <Segment>
+    <Dimmer active>
+      <Loader content='Loading' />
+    </Dimmer>
+  </Segment>
 );
 
 export default Spinner;
